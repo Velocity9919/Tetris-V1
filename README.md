@@ -1,3 +1,6 @@
+![image](https://github.com/Velocity9919/Tetris-V1/assets/143435067/7a79a88c-347d-4544-b7dc-4ef238d97232)
+
+
 # React Tetris V1
 
 Tetris game built with React
