@@ -54,15 +54,15 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build -t tetrisv1 ."
-                       sh "docker tag tetrisv1 sevenajay/tetrisv1:latest "
-                       sh "docker push sevenajay/tetrisv1:latest "
+                       sh "docker tag tetrisv1 nareshbabu1991/tetrisv1:latest "
+                       sh "docker push nareshbabu1991/tetrisv1:latest "
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image sevenajay/tetrisv1:latest > trivyimage.txt" 
+                sh "trivy image nareshbabu1991/tetrisv1:latest > trivyimage.txt" 
             }
         }
     }
