@@ -70,7 +70,7 @@ pipeline{
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Velocity9919/Tetris-V1.git'
+                git branch: 'main', url: 'https://github.com/Velocity9919/Tetris-manifest.git'
             }
         }
         stage('Update Deployment File') {
